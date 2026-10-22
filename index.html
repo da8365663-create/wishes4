@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4a1428">
+<title>For My Favorite Person ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hearts" aria-hidden="true"></div>
+
+<section id="lock" class="lock">
+  <div class="lock-card">
+    <div class="ornament" aria-hidden="true">♡</div>
+    <h1>Hey, my love</h1>
+    <p class="sub">A hundred little reasons, a thousand feelings,<br>and one very special person.</p>
+    <label for="password">Our little secret password</label>
+    <div class="password-row">
+      <input id="password" type="password" inputmode="numeric" maxlength="12" placeholder="Four digits" autocomplete="off">
+      <button id="unlock" class="button">Unlock</button>
+    </div>
+    <p id="error" role="status" class="error"></p>
+    <p class="hint">Hint: the four digits only we know</p>
+  </div>
+</section>
+
+<main id="love-site" hidden>
+  <header class="hero">
+    <div class="hero-text">
+      <p class="script">to my favorite human</p>
+      <h1>Every little thing <em>is you.</em></h1>
+      <p class="hero-copy">If I could choose a thousand times, in a thousand different worlds, I’d still find my way back to you.</p>
+      <div class="hero-actions">
+        <a class="button" href="#gallery">See our moments</a>
+        <button id="music-toggle" class="button ghost">♫ Play our song</button>
+      </div>
+    </div>
+    <figure class="arch">
+      <img src="photo8.jpg" alt="Her in a blue kurta, holding red roses and smiling">
+    </figure>
+  </header>
+  <audio id="song" preload="auto" loop><source src="our-song.m4a" type="audio/mp4"><source src="assets/our-song.m4a" type="audio/mp4"></audio>
+
+  <section class="section" id="gallery">
+    <p class="script">little moments, big love</p>
+    <h2>Moments I keep</h2>
+    <div id="photo-grid" class="photo-grid"></div>
+  </section>
+
+  <section class="section reasons" id="reasons">
+    <p class="script">a hundred reasons</p>
+    <h2>Why I love you</h2>
+    <div class="pick">
+      <p id="pick-text" class="pick-text">Tap below and I’ll tell you one.</p>
+      <button id="pick-btn" class="button gold">Tell me a reason</button>
+    </div>
+    <ol id="reason-list" class="reason-list"></ol>
+    <button id="more" class="button ghost light">Show all 100</button>
+  </section>
+
+  <section class="final">
+    <div class="note-card">
+      <span class="big-heart" aria-hidden="true">♥</span>
+      <h2>My favorite place will always be <em>with you.</em></h2>
+      <p>No list could ever fit all the ways I love you. Thank you for being you, for being my person, and for making ordinary days feel like a love story.</p>
+      <p class="signature">Forever yours ♡</p>
+      <button id="surprise" class="button">One more little surprise</button>
+      <p id="surprise-text" class="surprise-text" hidden>I love you. Today, tomorrow, and in every version of forever.</p>
+    </div>
+  </section>
+  <footer>Made with a whole lot of love ♡</footer>
+</main>
+
+<dialog id="lightbox" class="lightbox">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-nav prev" aria-label="Previous photo">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-nav next" aria-label="Next photo">›</button>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
